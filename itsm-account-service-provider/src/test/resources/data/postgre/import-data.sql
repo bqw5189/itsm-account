@@ -1,0 +1,1 @@
+insert into t_um_user (id, name,passwd,login_name,phone,email,department_name,remark) values (uuid_generate_v4(),'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', '743847333', 'admin@itsm.com', 'admin', '系统管理员用户');
