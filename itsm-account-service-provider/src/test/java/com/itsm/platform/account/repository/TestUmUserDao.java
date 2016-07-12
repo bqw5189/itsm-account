@@ -10,19 +10,22 @@ import org.springside.modules.test.spring.SpringTransactionalTestCase;
 import java.util.List;
 
 /**
+ * 用户
  * Created by tom on 16/6/21.
  */
 @ContextConfiguration(locations = {"/META-INF/spring/applicationContext.xml"})
-public class TestUserDao extends SpringTransactionalTestCase {
+public class TestUmUserDao extends SpringTransactionalTestCase {
 
     @Autowired
     private UmUserDao umUserDao;
 
     @Test
-    public void findByName(){
-        List<UmUser> user = umUserDao.findAllBy();
+    public void findAll(){
+        List<UmUser> umUsers = umUserDao.findAllBy();
 
-        Assert.assertNotNull(user);
+        Assert.assertNotNull(umUsers);
+
+        Assert.assertEquals(umUsers.size(), 1);
 
     }
 }

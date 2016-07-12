@@ -15,7 +15,7 @@
  */
 package com.itsm.platform.account.provider;
 
-public class DemoProvider {
+public class ItsmAccountServiceProvider {
 
     public static void main(String[] args) {
       System.setProperty("spring.profiles.default", "test");

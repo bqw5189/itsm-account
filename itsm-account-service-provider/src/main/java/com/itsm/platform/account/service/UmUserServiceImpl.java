@@ -1,8 +1,8 @@
 package com.itsm.platform.account.service;
 
 import com.itsm.platform.account.entity.UmUser;
-import com.itsm.platform.account.repository.UmUserDao;
 import org.dubbo.x.repository.DaoBase;
+import com.itsm.platform.account.repository.UmUserDao;
 import org.dubbo.x.service.CURDServiceBase;
 import org.springframework.beans.factory.annotation.Autowired;
 

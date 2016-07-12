@@ -27,27 +27,21 @@
                     optimizer="com.itsm.platform.account.SerializationOptimizerImpl"/>
 
 
-    <!-- account api v2 -->
-    <bean id="accountService" class="com.itsm.platform.account.service.AccountServiceImpl"/>
-
-    <dubbo:service interface="com.itsm.platform.account.service.AccountService" ref="accountService"
-                   protocol="dubbo" validation="true" timeout="2000" connections="100"/>
-    <!-- account api v2 -->
-
-    <!-- message service v2 -->
-    <dubbo:service interface="com.itsm.platform.account.service.MessageService" ref="messageService"
-                   protocol="dubbo" validation="true" timeout="2000" connections="100"/>
-
-    <bean id="messageService" class="com.itsm.platform.account.service.MessageServiceImpl"/>
-    <!-- message service v2 -->
-
-
-
 	<!-- 用户 api -->
     <bean id="umUserService" class="com.itsm.platform.account.service.UmUserServiceImpl"/>
 
     <dubbo:service interface="com.itsm.platform.account.service.UmUserService" ref="umUserService"
                    protocol="dubbo" validation="true" timeout="2000" connections="100"/>
     <!-- 用户 api -->
+
+
+
+
+	<!-- 功能 api -->
+    <bean id="umFunctionService" class="com.itsm.platform.account.service.UmFunctionServiceImpl"/>
+
+    <dubbo:service interface="com.itsm.platform.account.service.UmFunctionService" ref="umFunctionService"
+                   protocol="dubbo" validation="true" timeout="2000" connections="100"/>
+    <!-- 功能 api -->
 
 </beans>

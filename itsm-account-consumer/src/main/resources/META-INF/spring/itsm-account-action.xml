@@ -18,9 +18,33 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
-    <bean class="com.itsm.platform.account.consumer.DemoAction" init-method="start">
-        <property name="accountService" ref="accountService"/>
-    </bean>
 
+
+	<!-- 用户 action -->
+    <bean class="com.itsm.platform.account.consumer.UmUserDemoAction" init-method="start">
+        <property name="umUserService" ref="umUserService"/>
+    </bean>
+    <!-- 用户 action -->
+
+
+	<!-- 用户 action -->
+    <bean class="com.itsm.platform.account.consumer.UmUserDemoAction" init-method="start">
+        <property name="umUserService" ref="umUserService"/>
+    </bean>
+    <!-- 用户 action -->
+
+
+	<!-- 用户 action -->
+    <bean class="com.itsm.platform.account.consumer.UmUserDemoAction" init-method="start">
+        <property name="umUserService" ref="umUserService"/>
+    </bean>
+    <!-- 用户 action -->
+
+
+	<!-- 功能 action -->
+    <bean class="com.itsm.platform.account.consumer.UmFunctionDemoAction" init-method="start">
+        <property name="umFunctionService" ref="umFunctionService"/>
+    </bean>
+    <!-- 功能 action -->
 
 </beans>

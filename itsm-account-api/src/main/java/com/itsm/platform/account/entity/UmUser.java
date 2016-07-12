@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import java.util.Date;
+
 /**
  * 用户
  * <p>
@@ -20,11 +22,11 @@ import javax.validation.constraints.NotNull;
 public class UmUser extends StatusEntity {
     
     /**
-     * 登录用户名
+     * 登录名
      */
-    @ApiModelProperty(value = "登录用户名", required = false)
+    @ApiModelProperty(value = "登录名", required = false)
     @NotNull
-    @Column(columnDefinition = "登录用户名")
+    @Column(columnDefinition = "登录名")
     private String loginName;
     public String getLoginName() {
         return loginName;
@@ -34,11 +36,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * passwd
+     * 密码
      */
-    @ApiModelProperty(value = "passwd", required = false)
+    @ApiModelProperty(value = "密码", required = false)
     @NotNull
-    @Column(columnDefinition = "passwd")
+    @Column(columnDefinition = "密码")
     private String passwd;
     public String getPasswd() {
         return passwd;
@@ -48,11 +50,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * name
+     * 名称
      */
-    @ApiModelProperty(value = "name", required = false)
+    @ApiModelProperty(value = "名称", required = false)
     @NotNull
-    @Column(columnDefinition = "name")
+    @Column(columnDefinition = "名称")
     private String name;
     public String getName() {
         return name;
@@ -62,11 +64,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * phone
+     * 电话
      */
-    @ApiModelProperty(value = "phone", required = false)
+    @ApiModelProperty(value = "电话", required = false)
     
-    @Column(columnDefinition = "phone")
+    @Column(columnDefinition = "电话")
     private String phone;
     public String getPhone() {
         return phone;
@@ -76,11 +78,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * email
+     * 邮件
      */
-    @ApiModelProperty(value = "email", required = false)
+    @ApiModelProperty(value = "邮件", required = false)
     
-    @Column(columnDefinition = "email")
+    @Column(columnDefinition = "邮件")
     private String email;
     public String getEmail() {
         return email;
@@ -90,11 +92,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * departmentName
+     * 部门名称
      */
-    @ApiModelProperty(value = "departmentName", required = false)
+    @ApiModelProperty(value = "部门名称", required = false)
     
-    @Column(columnDefinition = "departmentName")
+    @Column(columnDefinition = "部门名称")
     private String departmentName;
     public String getDepartmentName() {
         return departmentName;
@@ -104,11 +106,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * lastLoginTime
+     * 最后登录时间
      */
-    @ApiModelProperty(value = "lastLoginTime", required = false)
+    @ApiModelProperty(value = "最后登录时间", required = false)
     
-    @Column(columnDefinition = "lastLoginTime")
+    @Column(columnDefinition = "最后登录时间")
     private Integer lastLoginTime;
     public Integer getLastLoginTime() {
         return lastLoginTime;
@@ -118,11 +120,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * loginAddress
+     * 登录ip
      */
-    @ApiModelProperty(value = "loginAddress", required = false)
+    @ApiModelProperty(value = "登录ip", required = false)
     
-    @Column(columnDefinition = "loginAddress")
+    @Column(columnDefinition = "登录ip")
     private String loginAddress;
     public String getLoginAddress() {
         return loginAddress;
@@ -132,11 +134,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * remark
+     * 描述描述
      */
-    @ApiModelProperty(value = "remark", required = false)
+    @ApiModelProperty(value = "描述描述", required = false)
     
-    @Column(columnDefinition = "remark")
+    @Column(columnDefinition = "描述描述")
     private String remark;
     public String getRemark() {
         return remark;
@@ -146,11 +148,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * locked
+     * 锁定
      */
-    @ApiModelProperty(value = "locked", required = false)
+    @ApiModelProperty(value = "锁定", required = false)
     
-    @Column(columnDefinition = "locked")
+    @Column(columnDefinition = "锁定")
     private String locked;
     public String getLocked() {
         return locked;
@@ -160,11 +162,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * ip
+     * 登录ip
      */
-    @ApiModelProperty(value = "ip", required = false)
+    @ApiModelProperty(value = "登录ip", required = false)
     
-    @Column(columnDefinition = "ip")
+    @Column(columnDefinition = "登录ip")
     private String ip;
     public String getIp() {
         return ip;
@@ -174,11 +176,11 @@ public class UmUser extends StatusEntity {
     }
     
     /**
-     * enterpriseId
+     * 企业id
      */
-    @ApiModelProperty(value = "enterpriseId", required = false)
+    @ApiModelProperty(value = "企业id", required = false)
     
-    @Column(columnDefinition = "enterpriseId")
+    @Column(columnDefinition = "企业id")
     private String enterpriseId;
     public String getEnterpriseId() {
         return enterpriseId;

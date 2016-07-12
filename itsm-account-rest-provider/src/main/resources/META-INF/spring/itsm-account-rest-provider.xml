@@ -46,4 +46,15 @@
     <dubbo:reference id="umUserService" interface="com.itsm.platform.account.service.UmUserService"/>
     <!--用户 api -->
 
+	<!--功能 api -->
+    <dubbo:service interface="com.itsm.platform.account.facade.UmFunctionRestService" ref="umFunctionRestService"
+                   protocol="rest" validation="true" timeout="2000" connections="100"/>
+
+    <bean id="umFunctionRestService" class="com.itsm.platform.account.facade.UmFunctionRestServiceImpl">
+        <property name="umFunctionService" ref="umFunctionService"/>
+    </bean>
+
+    <dubbo:reference id="umFunctionService" interface="com.itsm.platform.account..service.UmFunctionService"/>
+    <!--功能 api -->
+
 </beans>

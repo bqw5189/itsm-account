@@ -1,9 +1,9 @@
 package com.itsm.platform.account.facade;
 
 import com.itsm.platform.account.entity.UmUser;
-import com.itsm.platform.account.service.UmUserService;
 import org.dubbo.x.facade.RestServiceBase;
 import org.dubbo.x.service.CURDService;
+import com.itsm.platform.account.service.UmUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
