@@ -48,3 +48,15 @@ COMMENT ON COLUMN t_um_function.module_name IS '模块名称';
 COMMENT ON COLUMN t_um_function.name IS '名称英文';
 COMMENT ON COLUMN t_um_function.funct_desc IS '描述';
 COMMENT ON COLUMN t_um_function.privilege IS '特权';
+
+drop table if EXISTS  t_um_role;
+CREATE TABLE t_um_role(
+  id uuid PRIMARY KEY NOT NULL,
+  name character varying(31),
+  describe character varying(256),
+  status VARCHAR(32) DEFAULT 'OK' -- 状态
+);
+ALTER TABLE t_um_role OWNER TO postgres;
+COMMENT ON TABLE t_um_role IS '角色表';
+COMMENT ON COLUMN t_um_role.name IS '名称';
+COMMENT ON COLUMN t_um_role.describe IS '描述';
