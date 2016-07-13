@@ -22,4 +22,9 @@
     <dubbo:reference id="umFunctionService" interface="com.itsm.platform.account.service.UmFunctionService"/>
     <!-- 功能 service -->
 
+
+	<!-- 角色表 service -->
+    <dubbo:reference id="umRoleService" interface="com.itsm.platform.account.service.UmRoleService"/>
+    <!-- 角色表 service -->
+
 </beans>

@@ -60,3 +60,15 @@ ALTER TABLE t_um_role OWNER TO postgres;
 COMMENT ON TABLE t_um_role IS '角色表';
 COMMENT ON COLUMN t_um_role.name IS '名称';
 COMMENT ON COLUMN t_um_role.describe IS '描述';
+
+drop table if EXISTS  t_um_role_app;
+CREATE TABLE t_um_role_app(
+  id uuid PRIMARY KEY NOT NULL,
+  role_id integer NOT NULL,
+  app_id integer NOT NULL
+);
+ALTER TABLE t_um_role_app OWNER TO postgres;
+COMMENT ON TABLE t_um_role_app IS '角色业务关联表';
+COMMENT ON COLUMN t_um_role_app.role_id IS '角色id';
+COMMENT ON COLUMN t_um_role_app.app_id IS '业务id';
+

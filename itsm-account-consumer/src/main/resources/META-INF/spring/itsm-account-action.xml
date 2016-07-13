@@ -47,4 +47,18 @@
     </bean>
     <!-- 功能 action -->
 
+
+	<!-- 角色表 action -->
+    <bean class="com.itsm.platform.account.consumer.UmRoleDemoAction" init-method="start">
+        <property name="umRoleService" ref="umRoleService"/>
+    </bean>
+    <!-- 角色表 action -->
+
+
+	<!-- 功能表 action -->
+    <bean class="com.itsm.platform.account.consumer.UmFunctionDemoAction" init-method="start">
+        <property name="umFunctionService" ref="umFunctionService"/>
+    </bean>
+    <!-- 功能表 action -->
+
 </beans>

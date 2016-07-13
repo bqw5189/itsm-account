@@ -44,4 +44,12 @@
                    protocol="dubbo" validation="true" timeout="2000" connections="100"/>
     <!-- 功能 api -->
 
+
+	<!-- 角色表 api -->
+    <bean id="umRoleService" class="com.itsm.platform.account.service.UmRoleServiceImpl"/>
+
+    <dubbo:service interface="com.itsm.platform.account.service.UmRoleService" ref="umRoleService"
+                   protocol="dubbo" validation="true" timeout="2000" connections="100"/>
+    <!-- 角色表 api -->
+
 </beans>
